@@ -1,0 +1,130 @@
+body {
+    margin: 0px auto;
+    background-color: #D7D9CE;
+}
+
+.topbar {
+    background-image: linear-gradient(to top,#0C7489,#119DA4);
+    height: 150px;
+    text-align: center;
+    box-shadow: 0 0 10px 0;
+}
+
+.title {
+    padding-top: 55px;
+    font-size: 40px;
+    font-family: Comfortaa;
+}
+
+.new-book {
+    width: 900px;
+    text-align:start;
+    margin: 30px auto 20px auto;
+}
+
+#add-btn {
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.091);
+    font-family: Comfortaa;
+    font-size: 17px;
+    transition: 0.5s;
+}
+#add-btn:hover {
+    background-color: #13505B;
+    color: white;
+}
+#add-btn:focus {
+   outline: 0px;
+}
+
+.form-popup {
+    width:900px;
+    z-index:0;
+    margin: auto;
+    display: none;
+  }
+
+.form-container {
+    margin: auto;
+    position: absolute;
+    max-width: 205px;
+    padding: 10px;
+    background-color: black;
+    border: 0px;
+    border-radius: 5px;
+    color:white;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+
+}
+.form-container input[type=text], .form-container input[type=number] {
+    width: 175px;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+#container {
+    width: 900px;
+    margin: auto;
+}
+
+#table {
+    margin-top: 30px;
+    width: 900px;
+    text-align:center;
+    /* margin: auto; */
+}
+
+.column-width {
+    background-color: rgba(0, 0, 0, 0.091);
+    border: 0px solid rgba(0, 0, 0, 0.091);
+    border-radius: 5px;
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.delete-column {
+    width: 20px;
+    padding: 5px;
+}
+
+.cell {
+    padding: 5px;
+}
+
+.delete-btn {
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Comfortaa;
+    transition: 0.3s;
+}
+.delete-btn:hover {
+    background-color: #13505B;
+    color: white;
+
+}
+.delete-btn:focus {
+   outline: 0px;
+}
+
+.btn {
+    border: 0px;
+    border-radius: 5px;
+    font-family: Comfortaa;
+    transition: 0.5s;
+    width: 100px;
+    height: 40px;
+}
+
+.btn:hover {
+    background-color: #13505B;
+    color: white;
+}

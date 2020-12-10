@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="font-family:Comfortaa">
+    <div class="topbar">
+        <div class="title">Library</div>
+    </div>
+    <div class="center">
+        
+        <div class="new-book">
+            <button id="add-btn" onclick="openForm()">New</button>
+        </div>  
+        <div class="form-popup" id="form">
+            <div class="form-container" >
+                <form action="" class="form" onsubmit="addToLibrary()">
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter Title" name="title" required>
+                
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" placeholder="Enter Author" name="author" required>
+
+                    <label for="pages"><b>Pages</b></label>
+                    <input type="number" min="0" placeholder="Enter # of Pages" name="pages" required>
+
+                    <label for="read"><b>Read</b></label>
+                    <input type="radio" id="yes" name="read" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="read" value="no">
+                    <label for="no">No</label><br><br>
+                
+                    <button type="submit" class="btn">Add</button>
+                    <button type="button" class="btn" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>  
+        <div id="container">
+            <table id="table">
+                <tr>
+                    <th class="column-width">Title</th>
+                    <th class="column-width">Author</th>
+                    <th class="column-width">Pages</th>
+                    <th class="column-width">Read</th>
+                    <th class="delete-column"></th>
+                </tr>
+                <tr id="row1">
+                    <td class="cell">Harry Potter</td>
+                    <td class="cell">J.K. Rowling</td>
+                    <td class="cell">291</td>
+                    <td class="cell">Yes</td>
+                    <td><button class="delete-btn" id="1">X</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
