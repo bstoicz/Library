@@ -19,15 +19,15 @@
         </div>  
         <div class="form-popup" id="form">
             <div class="form-container" >
-                <form action="" class="form" onsubmit="addToLibrary()">
+                <form name="form" class="form" id="add-new">
                     <label for="title"><b>Title</b></label>
-                    <input type="text" placeholder="Enter Title" name="title" required>
+                    <input type="text"  id="title" placeholder="Enter Title" name="title" required>
                 
                     <label for="author"><b>Author</b></label>
-                    <input type="text" placeholder="Enter Author" name="author" required>
+                    <input type="text"  id="author" placeholder="Enter Author" name="author" required>
 
                     <label for="pages"><b>Pages</b></label>
-                    <input type="number" min="0" placeholder="Enter # of Pages" name="pages" required>
+                    <input type="number"  id="pages" min="0" placeholder="Enter # of Pages" name="pages" required>
 
                     <label for="read"><b>Read</b></label>
                     <input type="radio" id="yes" name="read" value="yes">
@@ -49,12 +49,12 @@
                     <th class="column-width">Read</th>
                     <th class="delete-column"></th>
                 </tr>
-                <tr id="row1">
+                <tr id="row0">
                     <td class="cell">Harry Potter</td>
                     <td class="cell">J.K. Rowling</td>
                     <td class="cell">291</td>
                     <td class="cell">Yes</td>
-                    <td><button class="delete-btn" id="1">X</button></td>
+                    <td><button class="delete-btn" id="0">X</button></td>
                 </tr>
             </table>
         </div>
