@@ -82,6 +82,7 @@ body {
 #table-data {
     width: 900px;
     text-align:center;
+    table-layout:fixed;
 }
 
 .column-width {
@@ -93,14 +94,15 @@ body {
     padding: 5px;
 }
 
-.delete-column {
+.delete-column, .read-column {
     width: 20px;
     padding: 5px;
 }
 
 .cell {
     padding: 5px;
-    width: 202px;
+    width: 193px;
+    word-wrap:break-word;
 }
 
 .delete-btn {
@@ -112,12 +114,20 @@ body {
     font-family: Comfortaa;
     transition: 0.3s;
 }
-.delete-btn:hover {
+
+.read-btn {
+    padding-left: 5px;
+    height: 20px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Comfortaa;
+    transition: 0.3s;
+}
+.delete-btn:hover, .read-btn:hover {
     background-color: #13505B;
     color: white;
-
 }
-.delete-btn:focus {
+.delete-btn:focus, .read-btn:focus {
    outline: 0px;
 }
 

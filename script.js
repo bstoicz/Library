@@ -16,6 +16,7 @@ function libraryLoop (myLibrary) {
     let cell2 = row.insertCell(2);
     let cell3 = row.insertCell(3);
     let cell4 = row.insertCell(4);
+    let cell5 = row.insertCell(5);
     cell0.innerHTML = myLibrary[i].title;
     cell1.innerHTML = myLibrary[i].author;
     cell2.innerHTML = myLibrary[i].pages;
@@ -24,12 +25,18 @@ function libraryLoop (myLibrary) {
     cell1.className = "cell";
     cell2.className = "cell";
     cell3.className = "cell";
-    let button = document.createElement("button");
-    button.innerHTML = "X";
-    button.className = "delete-btn";
-    button.id = String(i+1);
-    button.setAttribute("onclick",`deleteRow(${i})`);
-    cell4.appendChild(button);
+    let buttonDelete = document.createElement("button");
+    buttonDelete.innerHTML = "X";
+    buttonDelete.className = "delete-btn";
+    buttonDelete.id = String(i);
+    buttonDelete.setAttribute("onclick",`deleteRow(${i})`);
+    cell4.appendChild(buttonDelete);
+    let buttonRead = document.createElement("button");
+    buttonRead.innerHTML = "Read";
+    buttonRead.className = "read-btn";
+    buttonRead.id = String(i);
+    buttonRead.setAttribute("onclick",`toggleRead(${i})`);
+    cell5.appendChild(buttonRead);
   }
 }
 
@@ -81,5 +88,13 @@ function clearForm() {
 // Delete item from array and rerun libraryLoop to display updated array
 function deleteRow(i) {
   myLibrary.splice(i,1);
+  libraryLoop (myLibrary);
+}
+
+function toggleRead(i) {
+  if (myLibrary[i].read == true) {
+    myLibrary[i].read = false;
+  }
+  else {myLibrary[i].read = true}
   libraryLoop (myLibrary);
 }
