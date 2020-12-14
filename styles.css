@@ -72,11 +72,16 @@ body {
     margin: auto;
 }
 
-#table {
+#table-header {
     margin-top: 30px;
     width: 900px;
     text-align:center;
     /* margin: auto; */
+}
+
+#table-data {
+    width: 900px;
+    text-align:center;
 }
 
 .column-width {
@@ -95,6 +100,7 @@ body {
 
 .cell {
     padding: 5px;
+    width: 202px;
 }
 
 .delete-btn {

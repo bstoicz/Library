@@ -41,7 +41,7 @@
             </div>
         </div>  
         <div id="container">
-            <table id="table">
+            <table id="table-header">
                 <tr>
                     <th class="column-width">Title</th>
                     <th class="column-width">Author</th>
@@ -49,12 +49,14 @@
                     <th class="column-width">Read</th>
                     <th class="delete-column"></th>
                 </tr>
+            </table>
+            <table id="table-data">
                 <tr id="row0">
                     <td class="cell">Harry Potter</td>
                     <td class="cell">J.K. Rowling</td>
                     <td class="cell">291</td>
                     <td class="cell">Yes</td>
-                    <td><button class="delete-btn" id="0">X</button></td>
+                    <td><button class="delete-btn" id="0" onclick="deleteRow(0)">X</button></td>
                 </tr>
             </table>
         </div>
